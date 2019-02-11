@@ -1,0 +1,14 @@
+rootProject.name = 'hello-gradle'
+include ':project-1', ':project-2', ':mylibrary'
+
+/*//======Change project name==============
+
+rootProject.children.each {
+    it.name = it.name + '-gradle'
+}
+
+include 'project-01'
+project(':project-01').projectDir = new File(rootDir, 'project-1')
+
+include 'project-02'
+project(':project-02').projectDir = new File(rootDir, 'project-2')*/

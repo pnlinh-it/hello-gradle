@@ -1,0 +1,27 @@
+//buildscript find dependency for plugin
+buildscript {
+    repositories {
+        jcenter()
+        google()
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.3.1'
+    }
+}
+
+//allprojects find dependency for module
+//if (!it.name.startsWith('Android')) {
+//        apply plugin: 'java'
+//    }
+//allproject use this configuration
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        jcenter()
+    }
+}
+
+
